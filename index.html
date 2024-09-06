@@ -10,6 +10,11 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <title>LYFTA</title>
   </head>
   <body>
@@ -38,17 +43,16 @@
               <img src="bilder/man.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="bilder/2.jpg" class="d-block w-100" alt="..." />
+              <img src="bilder/lokal.jpg" class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src="bilder/3.jpg" class="d-block w-100" alt="..." />
+              <img src="bilder/grupp.jpg" class="d-block w-100" alt="..." />
             </div>
           </div>
         </div>
-        <!--  <img src="bilder/man.jpg" class="img-fluid" alt="man-benchpress" /> -->
       </header>
 
-      <!--Kort beskrivning om gymmet-->
+      <!--Kort beskrivning om medlemskap-->
       <section id="om-lyfta">
         <h1>Bli medlem nu</h1>
         <p>
@@ -58,8 +62,117 @@
       </section>
 
       <!-- Pris lista-->
-      <section></section>
+      <section id="pris-lista">
+        <img
+          class="pris-item"
+          src="bilder/prislista/basic.png"
+          alt="basic-paket"
+        />
+        <img
+          class="pris-item"
+          src="bilder/prislista/pensionär.png"
+          alt="pensionär-paket"
+        />
+        <img
+          class="pris-item"
+          src="bilder/prislista/student.png"
+          alt="student-paket"
+        />
+        <img
+          class="pris-item"
+          src="bilder/prislista/premium.png"
+          alt="premium-paket"
+        />
+      </section>
+
+      <!-- Meny om lokal, grupp tränning och recept-->
+      <section id="body-meny">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="bilder/lokal-meny.jpg"
+                  alt="Card image"
+                />
+                <a class="meny-link" href=""
+                  ><div class="card-body">
+                    <h4
+                      class="card-title"
+                      style="font-family: Ubuntu, sans-serif"
+                    >
+                      Våra lokal
+                    </h4>
+                    <i
+                      class="fas fa-angle-right"
+                      style="font-size: 28px; color: black"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="bilder/grupp.jpg"
+                  alt="träna tillsammans"
+                />
+                <a class="meny-link" href="">
+                  <div class="card-body">
+                    <h4
+                      class="card-title"
+                      style="font-family: Ubuntu, sans-serif"
+                    >
+                      Grupp tränning
+                    </h4>
+                    <i
+                      class="fas fa-angle-right"
+                      style="font-size: 28px; color: black"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  id="recept"
+                  class="card-img-top"
+                  src="bilder/recept5.jpg"
+                  alt="recept"
+                />
+                <a class="meny-link" href="">
+                  <div class="card-body">
+                    <h4
+                      class="card-title"
+                      style="font-family: Ubuntu, sans-serif"
+                    >
+                      Testa vår recept
+                    </h4>
+                    <i
+                      class="fas fa-angle-right"
+                      style="font-size: 28px; color: black"
+                    ></i></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lite om gymet-->
+      <section id="about">
+        <img id="kort" src="bilder/visitkort.png" alt="kort" />
+        <h1>Om LYFTA</h1>
+        <p>
+          Upplev LYFTA - Ett välplanerat gym beläget i hela Stockholm som passar
+          träningssugna människor i alla åldrar. Här kan du träna styrke- och
+          konditionsträning i form av fria vikter, maskiner och funktionella
+          ytor!
+        </p>
+      </section>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -67,3 +180,5 @@
     ></script>
   </body>
 </html>
+
+<!--Validerades i 06/09-->

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -6,9 +7,9 @@
 
 .container-fluid {
   background-color: #e0dace;
-  height: 3351px;
 }
 
+/* Header navigation : logga, huvud nav, submit btn */
 .main-nav {
   background-color: #182126;
   height: 98px;
@@ -61,6 +62,10 @@
   list-style-type: none;
 }
 
+.huvud-meny a:hover {
+  color: #f27141;
+}
+
 .huvud-nav {
   text-decoration: none;
   color: white;
@@ -68,6 +73,7 @@
   font-weight: 100;
 }
 
+/* Kort text om medlemskap : h1, p */
 #om-lyfta {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,8 +86,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: 68px;
+  margin: 60px 0;
 }
 
 h1 {
@@ -93,5 +98,97 @@ h1 {
 #om-lyfta p {
   font-family: Ubuntu, sans-serif;
   width: 31%;
+  font-size: 1rem;
+}
+
+/* Olika paket : 4 st img */
+#pris-lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pris-item {
+  height: 100%;
+  width: 21%;
+  margin: 0 1%;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 0 3px black;
+          box-shadow: 5px 0 3px black;
+}
+
+.pris-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+/* Meny : 3 st cards med text som länken  */
+#body-meny {
+  opacity: 80%;
+  margin: 100px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f27141;
+  height: 12.5%;
+}
+
+.card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  margin: 10% 3%;
+  height: 100%;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+.meny-link {
+  text-decoration: none;
+  color: #182126;
+}
+
+/* Om gymmet : h1, p */
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#kort {
+  width: 70px;
+  border-radius: 3px;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+  margin-bottom: 50px;
+}
+
+#about p {
+  width: 70%;
+  text-align: center;
   font-size: 1rem;
 }
