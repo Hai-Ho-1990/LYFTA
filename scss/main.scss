@@ -94,7 +94,7 @@ h1 {
   font-size: 1rem;
 }
 
-/* Olika paket : 4 st img */
+/* Olika paket och pris : 4 st img */
 
 #pris-lista {
   display: flex;
@@ -170,13 +170,11 @@ h1 {
 }
 
 /* Footer */
-
 footer {
   background-color: #182126;
   display: flex;
   flex-direction: column;
 }
-
 .footer-container {
   display: flex;
   justify-content: space-evenly;
@@ -202,6 +200,7 @@ footer h5 {
   font-family: $primary-font;
 }
 
+/*
 .kundeservice-container {
   display: flex;
   flex-direction: column;
@@ -216,7 +215,7 @@ footer h5 {
   row-gap: 10px;
   padding-left: 0;
 }
-
+*/
 .media-icon {
   display: flex;
 }

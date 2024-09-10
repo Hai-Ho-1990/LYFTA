@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,11 +21,11 @@
     <title>LYFTA</title>
   </head>
   <body>
-    <div class="container-fluid">
+    <main class="container-fluid">
       <header>
         <!--Top navigation innehåller : loggan, huvud meny, sign up knapp-->
         <nav class="main-nav">
-          <a class="logo" href="#">LYFTA</a>
+          <a class="logo" href="index.html">LYFTA</a>
           <ul class="huvud-meny">
             <li><a class="huvud-nav" href="#">PRIS</a></li>
             <li><a class="huvud-nav" href="#">TRÄNA</a></li>
@@ -37,19 +37,31 @@
 
         <!-- Slide på omslagsbilder -->
         <div
-          id="carouselExampleSlidesOnly"
+          id="container-slide"
           class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="bilder/man.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="bilder/man.jpg"
+                class="d-block w-100"
+                alt="man benchpressar"
+              />
             </div>
             <div class="carousel-item">
-              <img src="bilder/lokal.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="bilder/lokal.jpg"
+                class="d-block w-100"
+                alt="gym lokal"
+              />
             </div>
             <div class="carousel-item">
-              <img src="bilder/grupp.jpg" class="d-block w-100" alt="..." />
+              <img
+                src="bilder/grupp.jpg"
+                class="d-block w-100"
+                alt="en grupp tränar tillsammans"
+              />
             </div>
           </div>
         </div>
@@ -174,81 +186,84 @@
           ytor!
         </p>
       </section>
-    </div>
 
+      <!-- Alla länkar samt kontakt info samlas här.-->
+      <footer>
+        <h4>LYFTA</h4>
+        <div class="footer-container">
+          <div class="nav-container">
+            <h5>Navigation</h5>
+            <ul id="footer-nav">
+              <li><a class="navigation-item" href="#">Pris</a></li>
+              <li><a class="navigation-item" href="#">Träna</a></li>
+              <li><a class="navigation-item" href="#">Inspiration</a></li>
+              <li><a class="navigation-item" href="#">Boka</a></li>
+            </ul>
+          </div>
+
+          <div class="lyfta-container">
+            <h5>LYFTA</h5>
+            <ul id="footer-lyfta">
+              <li><a class="lyfta-item" href="#">Om LYFTA</a></li>
+              <li><a class="lyfta-item" href="#">Press</a></li>
+              <li><a class="lyfta-item" href="#">Jobba på LYFTA</a></li>
+              <li><a class="lyfta-item" href="#">Tipsa oss</a></li>
+            </ul>
+          </div>
+
+          <div class="medlem-container">
+            <h5>Medlem</h5>
+            <ul id="footer-medlem">
+              <li><a class="medlem-item" href="#">Provträna på LYFTA</a></li>
+              <li><a class="medlem-item" href="#">Personlig träning</a></li>
+              <li>
+                <a class="medlem-item" href="#">Regler, vilkor & policy</a>
+              </li>
+              <li><a class="medlem-item" href="#">Om Cookies</a></li>
+            </ul>
+          </div>
+
+          <div class="kundeservice-container">
+            <div id="kundeservice">
+              <h5>Kundeservice</h5>
+              <ul id="footer-kundservice">
+                <li>
+                  <a class="kundservice-item" href="#">Frågor & svar</a>
+                </li>
+                <li>
+                  <a class="kundservice-item" href="#">Kontakt kundservice</a>
+                </li>
+              </ul>
+            </div>
+            <div id="followus-container">
+              <h5>Följ oss</h5>
+              <div class="media-icon">
+                <i
+                  class="fa fa-instagram"
+                  style="font-size: 28px; color: white; margin-right: 17px"
+                ></i>
+                <i
+                  class="fa fa-facebook-official"
+                  style="font-size: 28px; color: white; margin-right: 17px"
+                ></i>
+                <i
+                  class="fab fa-youtube"
+                  style="font-size: 30px; color: white"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Bootstrap Js-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Alla länkar samt kontakt info samlas här.-->
-    <footer>
-      <h4>LYFTA</h4>
-      <div class="footer-container">
-        <div class="nav-container">
-          <h5>Navigation</h5>
-          <ul id="footer-nav">
-            <li><a class="footer-nav" href="#">Pris</a></li>
-            <li><a class="footer-nav" href="#">Träna</a></li>
-            <li><a class="footer-nav" href="#">Inspiration</a></li>
-            <li><a class="footer-nav" href="#">Boka</a></li>
-          </ul>
-        </div>
-
-        <div class="lyfta-container">
-          <h5>LYFTA</h5>
-          <ul id="footer-lyfta">
-            <li><a class="footer-lyfta" href="#">Om LYFTA</a></li>
-            <li><a class="footer-lyfta" href="#">Press</a></li>
-            <li><a class="footer-lyfta" href="#">Jobba på LYFTA</a></li>
-            <li><a class="footer-lyfta" href="#">Tipsa oss</a></li>
-          </ul>
-        </div>
-
-        <div class="medlem-container">
-          <h5>Medlem</h5>
-          <ul id="footer-medlem">
-            <li><a class="footer-medlem" href="#">Provträna på LYFTA</a></li>
-            <li><a class="footer-medlem" href="#">Personlig träning</a></li>
-            <li>
-              <a class="footer-medlem" href="#">Regler, vilkor & policy</a>
-            </li>
-            <li><a class="footer-medlem" href="#">Om Cookies</a></li>
-          </ul>
-        </div>
-
-        <div class="kundeservice-container">
-          <div id="kundeservice">
-            <h5>Kundeservice</h5>
-            <ul id="footer-kundservice">
-              <li><a class="footer-kundservice" href="#">Frågor & svar</a></li>
-              <li>
-                <a class="footer-kundservice" href="#">Kontakt kundservice</a>
-              </li>
-            </ul>
-          </div>
-          <div id="followus-container">
-            <h5>Följ oss</h5>
-            <div class="media-icon">
-              <i
-                class="fa fa-instagram"
-                style="font-size: 28px; color: white; margin-right: 17px"
-              ></i>
-              <i
-                class="fa fa-facebook-official"
-                style="font-size: 28px; color: white; margin-right: 17px"
-              ></i>
-              <i
-                class="fab fa-youtube"
-                style="font-size: 30px; color: white"
-              ></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
 
-<!--Validerades i 06/09-->
+<!--Validerades i 07/09-->
