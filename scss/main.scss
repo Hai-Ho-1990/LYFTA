@@ -52,7 +52,7 @@ $primary-font: Ubuntu, sans-serif;
   background-color: #e36232;
 }
 
-.huvud-meny {
+.head-nav {
   display: flex;
   gap: 30px;
   color: white;
@@ -61,11 +61,11 @@ $primary-font: Ubuntu, sans-serif;
   list-style-type: none;
 }
 
-.huvud-meny a:hover {
+.head-nav a:hover {
   color: #f27141;
 }
 
-.huvud-nav {
+.head-nav-item {
   text-decoration: none;
   color: white;
   font-family: $primary-font;
@@ -74,7 +74,7 @@ $primary-font: Ubuntu, sans-serif;
 
 /* Kort text om medlemskap : h1, p */
 
-#om-lyfta {
+#about-lyfta {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -88,7 +88,7 @@ h1 {
   font-family: $primary-font;
 }
 
-#om-lyfta p {
+#about-lyfta p {
   font-family: $primary-font;
   width: 31%;
   font-size: 1rem;
@@ -96,12 +96,12 @@ h1 {
 
 /* Olika paket och pris : 4 st img */
 
-#pris-lista {
+#price-list {
   display: flex;
   justify-content: center;
 }
 
-.pris-item {
+.price-item {
   height: 100%;
   width: 21%;
   margin: 0 1%;
@@ -109,13 +109,13 @@ h1 {
   box-shadow: 5px 0 3px black;
 }
 
-.pris-item:hover {
+.price-item:hover {
   transform: scale(1.1);
 }
 
 /* Meny : 3 st cards med text som länken  */
 
-#body-meny {
+#body-menu {
   opacity: 80%;
   margin: 100px 0;
   width: 100%;
@@ -155,7 +155,7 @@ h1 {
   align-items: center;
 }
 
-#kort {
+#card {
   width: 70px;
   border-radius: 3px;
   transform: rotate(-35deg);
@@ -200,22 +200,21 @@ footer h5 {
   font-family: $primary-font;
 }
 
-/*
-.kundeservice-container {
+.customer-container {
   display: flex;
   flex-direction: column;
 }
 
 #footer-nav,
 #footer-lyfta,
-#footer-medlem,
-#footer-kundservice {
+#footer-member,
+#footer-customer {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   padding-left: 0;
 }
-*/
+
 .media-icon {
   display: flex;
 }
