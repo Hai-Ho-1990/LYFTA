@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .dropdown {
@@ -21,8 +21,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -84,12 +84,12 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 60px 0;
 }
 
@@ -111,8 +111,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .price-item {
@@ -121,12 +121,12 @@ h1 {
   margin: 0 1%;
   border-radius: 20px;
   -webkit-box-shadow: 5px 0 3px black;
-          box-shadow: 5px 0 3px black;
+  box-shadow: 5px 0 3px black;
 }
 
 .price-item:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* Meny : 3 st cards med text som länken  */
@@ -143,7 +143,7 @@ h1 {
 
 .card-img-top {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .card {
@@ -156,8 +156,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .card-title {
@@ -176,18 +176,18 @@ h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #card {
   width: 70px;
   border-radius: 3px;
   -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
+  transform: rotate(-35deg);
   margin-bottom: 50px;
 }
 
@@ -206,8 +206,8 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer-container {
@@ -215,8 +215,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: calc(4% + 50px);
 }
 
@@ -247,8 +247,8 @@ footer h5 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 #footer-nav,
@@ -260,8 +260,8 @@ footer h5 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   row-gap: 10px;
   padding-left: 0;
 }
@@ -280,15 +280,15 @@ footer h5 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .logo {
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
     position: relative;
     left: auto;
   }
@@ -306,7 +306,7 @@ footer h5 {
     display: block;
     z-index: 2;
   }
-  .dropbtn {
+  #dropdown-btn {
     background-color: #182126;
     color: white;
     padding: 16px;
@@ -320,14 +320,14 @@ footer h5 {
   }
   .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #e0dace;
-    width: 336px;
-    height: 224px;
+    max-width: 100vh;
     -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     right: 0;
+    left: 0;
   }
   .dropdown-content a {
     color: black;
@@ -346,7 +346,7 @@ footer h5 {
   }
   .btn-bli-medlem {
     -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
     position: relative;
     left: 1%;
     width: 40%;
@@ -358,7 +358,7 @@ footer h5 {
   /* Olika paket och pris : 4 st img */
   #price-list {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .price-item {
     width: 40%;
@@ -369,10 +369,10 @@ footer h5 {
   /* Meny : 3 st cards med text som länken  */
   #body-menu {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .card {
     margin: 10% auto;
@@ -386,8 +386,8 @@ footer h5 {
   .footer-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   footer h4 {
     margin: 1.5rem;
