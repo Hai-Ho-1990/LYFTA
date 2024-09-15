@@ -13,19 +13,6 @@
   background-color: #e0dace;
 }
 
-/* Header navigation : logga, huvud nav, submit btn */
-.main-nav {
-  background-color: #182126;
-  height: 98px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .logo {
   font-family: Ubuntu, sans-serif;
   font-weight: 600;

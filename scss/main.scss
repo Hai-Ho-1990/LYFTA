@@ -20,15 +20,6 @@ $primary-font: Ubuntu, sans-serif;
   background-color: #e0dace;
 }
 
-/* Header navigation : logga, huvud nav, submit btn */
-.main-nav {
-  background-color: #182126;
-  height: 98px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .logo {
   @include logo-styles;
   color: $primary-color;
@@ -82,7 +73,6 @@ $primary-font: Ubuntu, sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
   margin: 60px 0;
 }
 
@@ -99,7 +89,6 @@ h1 {
 }
 
 /* Olika paket och pris : 4 st img */
-
 #price-list {
   display: flex;
   justify-content: center;
@@ -134,7 +123,6 @@ h1 {
 
 .card {
   margin: 10% 3%;
-  height: 100%;
 }
 
 .card-body {
@@ -159,17 +147,17 @@ h1 {
   align-items: center;
 }
 
+#about p {
+  font-size: 0.7rem;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 #card {
   width: 70px;
   border-radius: 3px;
   transform: rotate(-35deg);
-  margin-bottom: 50px;
-}
-
-#about p {
-  width: 70%;
-  text-align: center;
-  font-size: 1rem;
   margin-bottom: 50px;
 }
 
@@ -189,7 +177,6 @@ footer h4 {
   @include logo-styles;
   color: white;
   font-size: 2rem;
-  margin: 4% 0 50px 7.5%;
 }
 
 footer a {
@@ -330,12 +317,10 @@ footer h5 {
   }
 
   /* Meny : 3 st cards med text som länken  */
-
   #body-menu {
     flex-wrap: wrap;
     align-items: center;
   }
-
   .card {
     margin: 10% auto;
     width: 300px;
@@ -362,7 +347,5 @@ footer h5 {
   .member-container,
   .customer-container {
     display: block;
-    border-top: 1px solid rgb(224, 218, 206, 0.5);
-    padding: 4rem 2rem;
   }
 }
