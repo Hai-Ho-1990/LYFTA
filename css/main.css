@@ -2,15 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.dropdown {
-  display: none; /* Dropdown menu */
-}
-
-.container-fluid {
-  background-color: #e0dace;
+#page-container {
+  background-color: #e0dace !important;
 }
 
 .logo {
@@ -18,11 +14,27 @@
   font-weight: 600;
   font-style: italic;
   color: #f27040;
-  font-size: 2rem;
+  font-size: 1.4rem;
   text-decoration: none;
   position: relative;
-  left: 7.75%;
-  top: 25%;
+  left: 3%;
+}
+
+#main-nav {
+  background-color: #182126 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#container-nav {
+  padding: 0;
 }
 
 .btn-bli-medlem {
@@ -34,49 +46,42 @@
   border-radius: 30px;
   border: none;
   position: relative;
-  right: 7.75%;
-  top: 30%;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .btn-bli-medlem:hover {
   background-color: #e36232;
 }
 
-.head-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  color: white;
-  position: relative;
-  top: 35%;
-  list-style-type: none;
+.navbar-toggler {
+  color: white !important;
+  height: 7vh;
 }
 
-.head-nav a:hover {
-  color: #f27141;
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
-.head-nav-item {
-  text-decoration: none;
-  color: white;
+#head-nav {
+  background-color: #e0dace !important;
+  width: 100%;
+  margin-bottom: 0 !important;
+  z-index: 1;
+}
+
+#head-nav a {
+  color: black;
   font-family: Ubuntu, sans-serif;
   font-weight: 100;
+  padding: 12px 16px;
 }
 
-/* Kort text om medlemskap : h1, p */
+/* Om Lyfta */
 #about-lyfta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: block;
   text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   margin: 60px 0;
 }
 
@@ -87,9 +92,10 @@ h1 {
 }
 
 #about-lyfta p {
+  display: inline-block;
   font-family: Ubuntu, sans-serif;
-  width: 31%;
-  font-size: 1rem;
+  font-size: 0.7rem;
+  width: 52%;
 }
 
 /* Olika paket och pris : 4 st img */
@@ -97,27 +103,33 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .price-item {
-  height: 100%;
-  width: 21%;
-  margin: 0 1%;
+  width: 40%;
+  margin-bottom: 4%;
+  margin-left: 2%;
+  margin-right: 2%;
   border-radius: 20px;
   -webkit-box-shadow: 5px 0 3px black;
-  box-shadow: 5px 0 3px black;
+          box-shadow: 5px 0 3px black;
 }
 
 .price-item:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /* Meny : 3 st cards med text som länken  */
 #body-menu {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 80%;
   margin: 100px 0;
   width: 100%;
@@ -130,12 +142,13 @@ h1 {
 
 .card-img-top {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .card {
-  margin: 10% 3%;
-  height: 100%;
+  margin: 10% auto;
+  width: 300px;
+  margin: 20px auto;
 }
 
 .card-body {
@@ -143,8 +156,8 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card-title {
@@ -163,57 +176,56 @@ h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about p {
+  font-size: 0.7rem;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 70px;
 }
 
 #card {
   width: 70px;
   border-radius: 3px;
   -webkit-transform: rotate(-35deg);
-  transform: rotate(-35deg);
-  margin-bottom: 50px;
-}
-
-#about p {
-  width: 70%;
-  text-align: center;
-  font-size: 1rem;
+          transform: rotate(-35deg);
   margin-bottom: 50px;
 }
 
 /* Footer */
 footer {
   background-color: #182126;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: block;
 }
 
 .footer-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: calc(4% + 50px);
 }
 
 footer h4 {
+  margin: 1.5rem;
   font-family: Ubuntu, sans-serif;
   font-weight: 600;
   font-style: italic;
   color: white;
   font-size: 2rem;
-  margin: 4% 0 50px 7.5%;
+  padding-top: 24px;
 }
 
 footer a {
@@ -234,8 +246,24 @@ footer h5 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-container,
+.lyfta-container,
+.member-container,
+.customer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(224, 218, 206, 0.5);
+  padding: 4rem 2rem;
+  row-gap: 10px;
 }
 
 #footer-nav,
@@ -247,8 +275,8 @@ footer h5 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   row-gap: 10px;
   padding-left: 0;
 }
@@ -259,132 +287,116 @@ footer h5 {
   display: flex;
 }
 
-@media screen and (min-width: 360px) and (max-width: 430px) {
-  .main-nav {
-    width: 100%;
-    height: 100%;
+/* Responsive */
+@media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  #main-nav {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  #head-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #182126 !important;
   }
-  .logo {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    position: relative;
-    left: auto;
+  .navbar-collapse {
+    -webkit-box-flex: 0 !important;
+        -ms-flex-positive: 0 !important;
+            flex-grow: 0 !important;
   }
-  .head-nav {
-    /*flex-direction: column;
-    padding: 0;
-    grid-row: 2;
-    flex-basis: 100%;
-    order: 1;
-    left: 2%;
-    align-items: center;*/
-    display: none;
-  }
-  .dropdown {
-    display: block;
-    z-index: 2;
-  }
-  #dropdown-btn {
-    background-color: #182126;
+  #head-nav a {
     color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 100;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #e0dace;
-    max-width: 100vh;
-    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    right: 0;
-    left: 0;
-  }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .dropdown-content a:hover {
-    background-color: #f27141;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #182126;
+  #head-nav a:hover {
+    color: #f27141;
   }
   .btn-bli-medlem {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     position: relative;
-    left: 1%;
-    width: 40%;
+    right: 7.75%;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    font-size: 1rem;
   }
+  .logo {
+    position: relative;
+    left: 7.75%;
+  }
+  /* Kort text om medlemskap : h1, p */
   #about-lyfta p {
-    font-size: 0.7rem;
-    width: 52%;
+    width: 31%;
+    font-size: 1rem;
   }
   /* Olika paket och pris : 4 st img */
   #price-list {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .price-item {
-    width: 40%;
-    margin-bottom: 4%;
-    margin-left: 2%;
-    margin-right: 2%;
+    height: 100%;
+    width: 21%;
+    margin: 0 1%;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 0 3px black;
+            box-shadow: 5px 0 3px black;
   }
   /* Meny : 3 st cards med text som länken  */
-  #body-menu {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
   .card {
-    margin: 10% auto;
-    width: 300px;
+    height: 100%;
+    width: 100%;
   }
   /* Om gymmet : h1, p */
   #about p {
-    font-size: 0.7rem;
+    width: 70%;
+    font-size: 1rem;
   }
   /* Footer */
   .footer-container {
-    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
   }
   footer h4 {
-    margin: 1.5rem;
+    margin-top: 45px;
+    margin-bottom: 0;
   }
   .nav-container,
   .lyfta-container,
   .member-container,
   .customer-container {
+    border-top: none;
     display: block;
-    border-top: 1px solid rgba(224, 218, 206, 0.5);
-    padding: 4rem 2rem;
+    padding-top: 50px;
   }
 }
+/* All kod är validerad
