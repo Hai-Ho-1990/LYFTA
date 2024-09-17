@@ -387,8 +387,7 @@ footer h5 {
     margin-bottom: 0;
   }
   footer h4 {
-    margin-top: 45px;
-    margin-bottom: 0;
+    margin: 0 0 0 7%;
   }
   .nav-container,
   .lyfta-container,
@@ -399,4 +398,5 @@ footer h5 {
     padding-top: 50px;
   }
 }
-/* All kod är validerad
+
+ /*All kod är validerad
