@@ -1,10 +1,4 @@
-$primary-color: #f27040;
-$primary-font: Ubuntu, sans-serif;
-@mixin logo-styles {
-  font-family: Ubuntu, sans-serif;
-  font-weight: 600;
-  font-style: italic;
-}
+@import "variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
@@ -52,6 +46,11 @@ $primary-font: Ubuntu, sans-serif;
 
 .btn-bli-medlem:hover {
   background-color: #e36232;
+}
+
+.btn-bli-medlem > a {
+  text-decoration: none !important;
+  color: black;
 }
 
 .navbar-toggler {
@@ -205,6 +204,10 @@ footer a {
   font-family: $primary-font;
 }
 
+footer ul {
+  list-style-type: none;
+}
+
 footer h5 {
   color: white;
   font-family: $primary-font;
@@ -348,4 +351,4 @@ footer h5 {
     padding-top: 50px;
   }
 }
- /*All kod validerad
+/*All kod validerad*/

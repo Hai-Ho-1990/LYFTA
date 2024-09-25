@@ -1,0 +1,120 @@
+$primary-color: #f27040;
+
+$primary-font: Ubuntu, sans-serif;
+
+@mixin logo-styles {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.logo {
+  @include logo-styles;
+  color: $primary-color;
+  font-size: 1.4rem;
+  text-decoration: none;
+  position: relative;
+  left: 3%;
+}
+
+#main-nav {
+  background-color: #182126 !important;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#container-nav {
+  padding: 0;
+}
+
+.btn-bli-medlem {
+  background-color: $primary-color;
+  font-family: $primary-font;
+  font-size: 0.8rem;
+  width: 136px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  position: relative;
+  transform: scale(0.7);
+}
+
+.btn-bli-medlem:hover {
+  background-color: #e36232;
+}
+
+.navbar-toggler {
+  color: white !important;
+  height: 7vh;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+#head-nav {
+  background-color: #e0dace !important;
+  width: 100%;
+  margin-bottom: 0 !important;
+  z-index: 1;
+}
+
+#head-nav a {
+  color: black;
+  font-family: $primary-font;
+  font-weight: 100;
+  padding: 12px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  #main-nav {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  #head-nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #182126 !important;
+  }
+
+  .navbar-collapse {
+    flex-grow: 0 !important;
+  }
+
+  #head-nav a {
+    color: white;
+    font-family: $primary-font;
+    font-weight: 100;
+    order: 2;
+  }
+
+  #head-nav a:hover {
+    color: #f27141;
+  }
+
+  .btn-bli-medlem {
+    order: 3;
+    position: relative;
+    right: 7.75%;
+    transform: scale(0.9);
+    font-size: 1rem;
+  }
+
+  .logo {
+    position: relative;
+    left: 7.75%;
+  }
+}

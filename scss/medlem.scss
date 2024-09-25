@@ -1,0 +1,273 @@
+@use "component/header";
+@use "component/footer";
+@import "component/header";
+@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+#page-container {
+  background-color: #e0dace !important;
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#head-video {
+  position: absolute; /* så att video ska placerad i kanten av video-container */
+  /* detta gör att video ska utsträcka till sin video-container width och i detta fall är body width */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#campaign {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 20%;
+}
+
+#campaign h5 {
+  font-family: $primary-font;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+#campaign h1 {
+  font-family: $primary-font;
+  font-size: 1.9rem;
+  color: $primary-color;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#campaign #text {
+  z-index: 3;
+  position: relative;
+  top: 5px;
+}
+
+/* Gym location */
+
+#location-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#location-container h1 {
+  font-size: 0.8rem;
+  font-family: $primary-font;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button-container {
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 70%;
+  align-items: center;
+}
+
+.location-link {
+  border: none;
+  color: $primary-color;
+  background-color: #e0dace;
+  font-family: $primary-font;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.location-link:hover {
+  font-style: italic;
+}
+
+.button-container button:nth-child(2) {
+  font-size: 2.5rem;
+  border-bottom: 1px solid #f27040;
+}
+
+.button-container button:first-child {
+  border-bottom: 1px solid #f27040;
+}
+
+/* Bli medlem form */
+
+#signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup-background {
+  width: 100%;
+  z-index: 1;
+}
+
+fieldset {
+  z-index: 2;
+  font-family: $primary-font;
+  display: block;
+  width: 49%;
+  position: absolute;
+}
+
+fieldset legend {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info {
+  border-radius: 20px;
+  border: 0.5px solid black;
+  font-size: 0.5rem;
+  height: 20px;
+  width: 88%;
+  background-color: #e0dace;
+  margin-bottom: 10px;
+}
+
+.user-info::placeholder {
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+
+input[type="radio"] {
+  display: none;
+}
+
+ #price-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  border: 1px solid black;
+  background-color: #e0dace;
+  width: 45%;
+  border-radius: 8px;
+  font-size: 0.5rem;
+  padding: 4px;
+  text-align: center;
+  margin: 0 6px 10px 0;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #f27040;
+}
+
+*/
+
+/* Footer is here */
+footer h4 {
+  margin-top: 0 !important;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 768px) {
+  /* Campaign */
+
+  #campaign h5 {
+    font-size: 2rem;
+  }
+
+  #campaign h1 {
+    font-size: 3.5rem;
+  }
+
+  /* Gym location */
+
+  #location-container svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  #location-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .location-link {
+    font-size: 5rem;
+  }
+
+  .button-container button:nth-child(2) {
+    font-size: 5rem;
+  }
+
+  /* Medlemskap */
+
+  fieldset legend {
+    font-size: 1.8rem;
+  }
+
+  .user-info {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+
+  form .btn-bli-medlem {
+    position: relative;
+    left: 0.5%;
+  }
+}
+
+@media screen and (min-width: 821px) and (max-width: 920px) {
+  .user-info {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 921px) {
+  /* Campaign */
+
+  #campaign h5 {
+    font-size: 2.5rem;
+  }
+
+  #campaign h1 {
+    font-size: 4.5rem;
+  }
+
+  .user-info {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .user-info {
+    width: 65%;
+  }
+}

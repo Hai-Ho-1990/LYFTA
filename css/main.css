@@ -54,6 +54,11 @@
   background-color: #e36232;
 }
 
+.btn-bli-medlem > a {
+  text-decoration: none !important;
+  color: black;
+}
+
 .navbar-toggler {
   color: white !important;
   height: 7vh;
@@ -235,6 +240,10 @@ footer a {
   font-family: Ubuntu, sans-serif;
 }
 
+footer ul {
+  list-style-type: none;
+}
+
 footer h5 {
   color: white;
   font-family: Ubuntu, sans-serif;
@@ -398,5 +407,4 @@ footer h5 {
     padding-top: 50px;
   }
 }
-
- /*All kod validerad
+/*All kod validerad*/

@@ -1,0 +1,97 @@
+$primary-color: #f27040;
+
+$primary-font: Ubuntu, sans-serif;
+
+@mixin logo-styles {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+footer {
+  background-color: #182126;
+  display: block;
+}
+
+.footer-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: calc(4% + 50px);
+}
+
+footer h4 {
+  margin: 1.5rem;
+  @include logo-styles;
+  color: white;
+  font-size: 2rem;
+  padding-top: 24px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+  font-family: $primary-font;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer h5 {
+  color: white;
+  font-family: $primary-font;
+}
+
+.customer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container,
+.lyfta-container,
+.member-container,
+.customer-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(224, 218, 206, 0.5);
+  padding: 4rem 2rem;
+  row-gap: 10px;
+}
+
+#footer-nav,
+#footer-lyfta,
+#footer-member,
+#footer-customer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-left: 0;
+}
+
+.media-icon {
+  display: flex;
+}
+
+/*  Width between 768 px - 820 px  */
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  footer h4 {
+    margin: 0 0 0 7%;
+  }
+
+  .nav-container,
+  .lyfta-container,
+  .member-container,
+  .customer-container {
+    border-top: none;
+    display: block;
+    padding-top: 50px;
+  }
+}

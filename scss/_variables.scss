@@ -1,0 +1,9 @@
+$primary-color: #f27040;
+
+$primary-font: Ubuntu, sans-serif;
+
+@mixin logo-styles {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}

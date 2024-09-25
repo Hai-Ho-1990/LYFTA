@@ -1,0 +1,680 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.logo {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #f27040;
+  font-size: 1.4rem;
+  text-decoration: none;
+  position: relative;
+  left: 3%;
+}
+
+#main-nav {
+  background-color: #182126 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#container-nav {
+  padding: 0;
+}
+
+.btn-bli-medlem {
+  background-color: #f27040;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.8rem;
+  width: 136px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  position: relative;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.btn-bli-medlem:hover {
+  background-color: #e36232;
+}
+
+.navbar-toggler {
+  color: white !important;
+  height: 7vh;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#head-nav {
+  background-color: #e0dace !important;
+  width: 100%;
+  margin-bottom: 0 !important;
+  z-index: 1;
+}
+
+#head-nav a {
+  color: black;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 100;
+  padding: 12px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  #main-nav {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  #head-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #182126 !important;
+  }
+  .navbar-collapse {
+    -webkit-box-flex: 0 !important;
+        -ms-flex-positive: 0 !important;
+            flex-grow: 0 !important;
+  }
+  #head-nav a {
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 100;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #head-nav a:hover {
+    color: #f27141;
+  }
+  .btn-bli-medlem {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: relative;
+    right: 7.75%;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    font-size: 1rem;
+  }
+  .logo {
+    position: relative;
+    left: 7.75%;
+  }
+}
+footer {
+  background-color: #182126;
+  display: block;
+}
+
+.footer-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: calc(4% + 50px);
+}
+
+footer h4 {
+  margin: 1.5rem;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: white;
+  font-size: 2rem;
+  padding-top: 24px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.7rem;
+  font-family: Ubuntu, sans-serif;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer h5 {
+  color: white;
+  font-family: Ubuntu, sans-serif;
+}
+
+.customer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-container,
+.lyfta-container,
+.member-container,
+.customer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-top: 1px solid rgba(224, 218, 206, 0.5);
+  padding: 4rem 2rem;
+  row-gap: 10px;
+}
+
+#footer-nav,
+#footer-lyfta,
+#footer-member,
+#footer-customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  padding-left: 0;
+}
+
+.media-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*  Width between 768 px - 820 px  */
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
+  footer h4 {
+    margin: 0 0 0 7%;
+  }
+  .nav-container,
+  .lyfta-container,
+  .member-container,
+  .customer-container {
+    border-top: none;
+    display: block;
+    padding-top: 50px;
+  }
+}
+.logo {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #f27040;
+  font-size: 1.4rem;
+  text-decoration: none;
+  position: relative;
+  left: 3%;
+}
+
+#main-nav {
+  background-color: #182126 !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#container-nav {
+  padding: 0;
+}
+
+.btn-bli-medlem {
+  background-color: #f27040;
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.8rem;
+  width: 136px;
+  height: 36px;
+  border-radius: 30px;
+  border: none;
+  position: relative;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.btn-bli-medlem:hover {
+  background-color: #e36232;
+}
+
+.navbar-toggler {
+  color: white !important;
+  height: 7vh;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#head-nav {
+  background-color: #e0dace !important;
+  width: 100%;
+  margin-bottom: 0 !important;
+  z-index: 1;
+}
+
+#head-nav a {
+  color: black;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 100;
+  padding: 12px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  #main-nav {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  #head-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: #182126 !important;
+  }
+  .navbar-collapse {
+    -webkit-box-flex: 0 !important;
+        -ms-flex-positive: 0 !important;
+            flex-grow: 0 !important;
+  }
+  #head-nav a {
+    color: white;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 100;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #head-nav a:hover {
+    color: #f27141;
+  }
+  .btn-bli-medlem {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: relative;
+    right: 7.75%;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    font-size: 1rem;
+  }
+  .logo {
+    position: relative;
+    left: 7.75%;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#page-container {
+  background-color: #e0dace !important;
+}
+
+#video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#head-video {
+  position: absolute; /* så att video ska placerad i kanten av video-container */
+  /* detta gör att video ska utsträcka till sin video-container width och i detta fall är body width */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#campaign {
+  z-index: 2;
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 20%;
+}
+
+#campaign h5 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+#campaign h1 {
+  font-family: Ubuntu, sans-serif;
+  font-size: 1.9rem;
+  color: #f27040;
+  font-weight: 600;
+  font-style: italic;
+  margin: 0;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+#campaign #text {
+  z-index: 3;
+  position: relative;
+  top: 5px;
+}
+
+/* Gym location */
+#location-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#location-container h1 {
+  font-size: 0.8rem;
+  font-family: Ubuntu, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.button-container {
+  line-height: 1.2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.location-link {
+  border: none;
+  color: #f27040;
+  background-color: #e0dace;
+  font-family: Ubuntu, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.location-link:hover {
+  font-style: italic;
+}
+
+.button-container button:nth-child(2) {
+  font-size: 2.5rem;
+  border-bottom: 1px solid #f27040;
+}
+
+.button-container button:first-child {
+  border-bottom: 1px solid #f27040;
+}
+
+/* Bli medlem form */
+#signup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#signup-background {
+  width: 100%;
+  z-index: 1;
+}
+
+fieldset {
+  z-index: 2;
+  font-family: Ubuntu, sans-serif;
+  display: block;
+  width: 49%;
+  position: absolute;
+}
+
+fieldset legend {
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 0 0 5% 0;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-info {
+  border-radius: 20px;
+  border: 0.5px solid black;
+  font-size: 0.5rem;
+  height: 20px;
+  width: 88%;
+  background-color: #e0dace;
+  margin-bottom: 10px;
+}
+
+.user-info::-webkit-input-placeholder {
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-info::-moz-placeholder {
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-info:-ms-input-placeholder {
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-info::-ms-input-placeholder {
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user-info::placeholder {
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*
+
+input[type="radio"] {
+  display: none;
+}
+
+ #price-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  border: 1px solid black;
+  background-color: #e0dace;
+  width: 45%;
+  border-radius: 8px;
+  font-size: 0.5rem;
+  padding: 4px;
+  text-align: center;
+  margin: 0 6px 10px 0;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #f27040;
+}
+
+*/
+/* Footer is here */
+footer h4 {
+  margin-top: 0 !important;
+}
+
+/* Responsive */
+@media screen and (min-width: 768px) {
+  /* Campaign */
+  #campaign h5 {
+    font-size: 2rem;
+  }
+  #campaign h1 {
+    font-size: 3.5rem;
+  }
+  /* Gym location */
+  #location-container svg {
+    width: 24px;
+    height: 24px;
+  }
+  #location-container h1 {
+    font-size: 1.5rem;
+  }
+  .location-link {
+    font-size: 5rem;
+  }
+  .button-container button:nth-child(2) {
+    font-size: 5rem;
+  }
+  /* Medlemskap */
+  fieldset legend {
+    font-size: 1.8rem;
+  }
+  .user-info {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+  form .btn-bli-medlem {
+    position: relative;
+    left: 0.5%;
+  }
+}
+@media screen and (min-width: 821px) and (max-width: 920px) {
+  .user-info {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 921px) {
+  /* Campaign */
+  #campaign h5 {
+    font-size: 2.5rem;
+  }
+  #campaign h1 {
+    font-size: 4.5rem;
+  }
+  .user-info {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .user-info {
+    width: 65%;
+  }
+}
