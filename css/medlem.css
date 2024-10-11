@@ -473,7 +473,17 @@ footer h5 {
           align-items: center;
 }
 
-.location-link {
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label.location-label {
+  font-style: italic;
+  color: #182126;
+}
+
+label {
+  cursor: pointer;
   border: none;
   color: #f27040;
   background-color: #e0dace;
@@ -483,17 +493,8 @@ footer h5 {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.location-link:hover {
+label:hover {
   font-style: italic;
-}
-
-.button-container button:nth-child(2) {
-  font-size: 2.5rem;
-  border-bottom: 1px solid #f27040;
-}
-
-.button-container button:first-child {
-  border-bottom: 1px solid #f27040;
 }
 
 /* Bli medlem form */
@@ -586,35 +587,6 @@ form {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/*
-
-input[type="radio"] {
-  display: none;
-}
-
- #price-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-label {
-  border: 1px solid black;
-  background-color: #e0dace;
-  width: 45%;
-  border-radius: 8px;
-  font-size: 0.5rem;
-  padding: 4px;
-  text-align: center;
-  margin: 0 6px 10px 0;
-  cursor: pointer;
-}
-
-input[type="radio"]:checked + label {
-  background-color: #f27040;
-}
-
-*/
 /* Footer is here */
 footer h4 {
   margin-top: 0 !important;
@@ -675,6 +647,18 @@ footer h4 {
 }
 @media screen and (min-width: 1025px) {
   .user-info {
-    width: 65%;
+    width: 60%;
   }
+  /*  #location-container {
+      display: flex;
+      flex-direction: row;
+      height: 500px;
+  }
+  .button-container {
+      width: 100%;
+  }
+
+  #map {
+      height: 500px !important;
+  } */
 }
